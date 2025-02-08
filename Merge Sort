@@ -1,0 +1,33 @@
+# **1. MERGE SORT PSOJESİ**
+
+## **A.**
+
+*[16,21,11,8,12,22] -> Merge Sort*
+
+*1.* *Yukarıda verilen dizinin sort türüne göre aşamalarını yazınız.*
+
+Bölme Aşamaları
+
+```
+ikiye böl :  [16,21,11] ve [8,12,22]
+tekrar böl : [16] [21,11] ve [8] [12,22]
+tekrar böl : [16] [21] [11] ve [8] [12] [22]
+
+```
+
+Birleştirme Aşamaları
+
+```
+[21] ve [11] sıralı hale getirilir : [11,21]
+[12] ve [22] zaten sıralı :          [12,22]
+[16] ve [11,21] birleştirilir :      [11,16,21]
+[8] ve [12,22] birleştirilir :       [8,12,22]
+
+```
+
+*2.* *Big-O gösterimini yazınız.*
+
+Bölme işlemi her adımda diziyi ikiye böldüğü için logn seviyesinde bir derinlik oluşturur.
+Birleştirme işlemi her elemanı en fazla bir kez karşılaştırdığı için O(n) sürede gerçekleşir.
+
+Toplamda Merge Sort'un Time Complexity'si O(nlogn)'dir.
