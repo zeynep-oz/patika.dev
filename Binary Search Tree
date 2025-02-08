@@ -1,0 +1,41 @@
+# **1. BİNARY SEARCH TREE PROJESİ**
+
+## **A.**
+
+*[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] -> Binary Search Tree*
+
+*1.* *Yukarıda verilen dizinin Binary-Search-Tree aşamalarını yazınız.*
+
+## 1. Root (Kök) Belirleme
+
+İlk eleman *7*, kök (root) olarak seçilir.
+
+## 2. Elemanları BST Kurallarına Göre Yerleştirme:
+
+- *5* → 7'den küçük, soluna eklenir.
+- *1* → 5'ten küçük, soluna eklenir.
+- *8* → 7'den büyük, sağına eklenir.
+- *3* → 1'den büyük, sağına eklenir.
+- *6* → 5'ten büyük, sağına eklenir.
+- *0* → 1'den küçük, soluna eklenir.
+- *9* → 8'den büyük, sağına eklenir.
+- *4* → 3'ten büyük, sağına eklenir.
+- *2* → 3'ten küçük, soluna eklenir.
+
+## 3. Sonuçta Oluşan BST Şeması:
+
+'''
+7
+   / \
+  5   8
+ / \    \
+1   6    9
+
+/ 
+0   3 / 
+2   4
+'''
+
+## Açıklamalar:
+- Her düğüm, solundaki düğümlerden büyük ve sağındaki düğümlerden küçüktür.
+- BST, veri arama işlemlerinde *O(log n)* zaman karmaşıklığına sahiptir.
